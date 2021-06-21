@@ -10,9 +10,6 @@ import React, { ReactNode } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
-import Contact from "./Contact"
-
-const { contact } = Contact
 interface LayoutProps {
   children: ReactNode
 }
@@ -33,7 +30,6 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <Header siteTitle={siteTitle} />
       <main>{children}</main>
-      <Contact name={contact} />
     </>
   )
 }
